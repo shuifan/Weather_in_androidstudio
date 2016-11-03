@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@mipmap/blue_sky">
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        
+        <Button 
+            android:id="@+id/switch_city"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@mipmap/home"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            />
+        
+        <TextView 
+            android:id="@+id/city_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:text="江苏南通海安"
+            />
+        
+        <Button 
+            android:id="@+id/refresh_weather"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@mipmap/refresh"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            />
+    </RelativeLayout>
+
+    <LinearLayout 
+        android:id="@+id/weather_info_layout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal"
+        >
+        
+        <LinearLayout 
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            
+            <TextView
+                android:id="@+id/weather_temp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:gravity="center_horizontal"
+                android:textColor="#FFFFFF"
+                android:text="16/15°"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/weather_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:text="大到暴雨到暴雨" />
+            
+            <TextView 
+                android:id="@+id/wind_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center_horizontal"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                android:text="西北风6-7级"
+                
+                />
+
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="1dp"
+            android:layout_height="150dp"
+            android:background="#D3D3D3"
+            android:layout_marginTop="23dp"></LinearLayout>
+        <LinearLayout 
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="穿衣指数"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:textSize="30sp"
+                />
+            
+            <TextView 
+                android:id="@+id/dress_index"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:text="冷"
+                android:textColor="#FFFFFF"
+                android:textSize="80sp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:orientation="horizontal"
+        >
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="明天"
+            android:textColor="#080808"
+            android:gravity="center_vertical"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:textSize="30sp"
+            />
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        ></LinearLayout>
+</LinearLayout>
